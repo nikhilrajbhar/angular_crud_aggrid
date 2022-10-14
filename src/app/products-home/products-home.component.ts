@@ -24,6 +24,12 @@ export class ProductsHomeComponent implements OnInit {
   ngOnInit() { }
 
 
+  public defaultColDef: ColDef = {
+    sortable: true,
+    filter: true,
+  };
+
+  
 columnDefs: ColDef[] = [
   { field: 'productName' },
   { field: 'productPrice' },

@@ -9,6 +9,6 @@
     <!-- <p class="message-danger">{{productMessage}}</p> -->
     <ag-grid-angular id="nikhilgrid"
         style="width:100%;height:100vh;text-align: center;justify-items: center; align-items: center;"
-        class="ag-theme-alpine" [rowData]="productList" [columnDefs]="columnDefs" [pagination]="true"
+        class="ag-theme-alpine" [rowData]="productList" [columnDefs]="columnDefs" [pagination]="true" [defaultColDef]="defaultColDef"
         (gridReady)="onGridReady($event)">
     </ag-grid-angular>
