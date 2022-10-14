@@ -7,10 +7,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   selector: 'btn-cell-renderer',
   template: `
     <div style="display: flex;">
-    <!-- <span style="flex:1"><i (click)="btnClickedHandler($event)" class="fa fa-trash"></i></span> -->
     <span style="flex:1"><i (click)="btnClickedHandler($event)" class="fa fa-edit" style="color: blue;"></i> </span>
       <span style="flex:1"><i (click)="btnDeleteHandler($event)" class="fa fa-trash" style="color: red;"></i> </span>
-      <!-- <a style="flex:1" href="/seller-update-product/{{this.productId}}" ><i class="fa fa-edit"></i></a> -->
     </div>   
   `,
 })
