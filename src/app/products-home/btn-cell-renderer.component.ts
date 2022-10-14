@@ -7,8 +7,8 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   selector: 'btn-cell-renderer',
   template: `
     <div style="display: flex;">
-    <span style="flex:1"><i (click)="btnClickedHandler($event)" class="fa fa-edit" style="color: blue;"></i> </span>
-      <span style="flex:1"><i (click)="btnDeleteHandler($event)" class="fa fa-trash" style="color: red;"></i> </span>
+    <span style="flex:1"><i (click)="btnClickedHandler($event)" class="fa fa-edit" style="color: blue;font-size:20px;cursor:pointer"></i> </span>
+      <span style="flex:1"><i (click)="btnDeleteHandler($event)" class="fa fa-trash" style="color: red;font-size:20px;cursor:pointer"></i> </span>
     </div>   
   `,
 })
@@ -34,5 +34,3 @@ export class BtnCellRenderer implements ICellRendererAngularComp {
     return false;
   }
 }
-
-// <button (click)="btnClickedHandler($event)">Delete</button>

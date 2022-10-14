@@ -12,7 +12,7 @@ import { ImageFormatterComponent } from './ImageFormatterComponent';
   templateUrl: './products-home.component.html',
   styleUrls: ['./products-home.component.scss']
 })
-export class ProductsHomeComponent implements OnInit {
+export class ProductsHomeComponent  {
   productList:product[] | undefined;
 
   constructor(private api: ApiService, public dialog: MatDialog) { }
@@ -21,9 +21,6 @@ export class ProductsHomeComponent implements OnInit {
     this.getAllProducts();
   }
 
-  ngOnInit() { }
-
-
   public defaultColDef: ColDef = {
     sortable: true,
     filter: true,
@@ -31,11 +28,11 @@ export class ProductsHomeComponent implements OnInit {
 
   
 columnDefs: ColDef[] = [
-  { field: 'productName' },
-  { field: 'productPrice' },
-  { field: 'productColor' },
-  { field: 'productDescription'},
-  { field: 'productImage',cellRendererFramework: ImageFormatterComponent },
+  { field: 'productImage',  headerName:"Image",cellRendererFramework: ImageFormatterComponent },
+  { field: 'productName', headerName:"Name"},
+  { field: 'productPrice', headerName:"Price" },
+  { field: 'productColor', headerName:"Color" },
+  { field: 'productDescription', headerName:"Description"},
   { field: 'Action',  
   cellRenderer: BtnCellRenderer,
   cellRendererParams: {

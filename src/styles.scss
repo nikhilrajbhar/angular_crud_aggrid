@@ -7,4 +7,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .example-spacer {
     flex: 1 1 auto;
   }
+
+  .ag-header-cell-label {
+    justify-content: center;
+ }
+
+ .rounded-image{
+  border-radius: 50%;
+}
+
+.ag-theme-alpine, .ag-theme-alpine-dark {
+  --ag-alpine-active-color: transparent;
+}
+
+
   
