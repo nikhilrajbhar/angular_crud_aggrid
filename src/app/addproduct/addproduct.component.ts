@@ -59,7 +59,7 @@ export class AddproductComponent implements OnInit {
     else this.updateProduct();
   }
 
-  getproductById(id: string | number) {
+  getproductById(id:number) {
     this.api.getProduct(id).subscribe((result: product) => {
       console.log("result ----", result);
 

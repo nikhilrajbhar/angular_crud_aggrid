@@ -12,7 +12,6 @@ import { MatIconModule} from "@angular/material/icon";
 import { MatButtonModule} from "@angular/material/button";
 import { MatToolbarModule} from "@angular/material/toolbar";
 import { HttpClientModule } from '@angular/common/http';
-import { ProductComponent } from './product/product.component';
 import { ProductsHomeComponent } from './products-home/products-home.component';
 import { MatMenuModule} from "@angular/material/menu";
 import { MatFormFieldModule} from "@angular/material/form-field";
@@ -28,7 +27,6 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     AddproductComponent,
-    ProductComponent,
     ProductsHomeComponent,
     HeaderComponent
   ],

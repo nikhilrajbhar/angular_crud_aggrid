@@ -11,10 +11,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
- 
-
   productAdd(data: product) {
-    console.warn(data)
     return this.http.post(`http://localhost:3000/product`,data)
 
   }
@@ -22,7 +19,7 @@ export class ApiService {
   getProductList() {
     return this.http.get<product[]>(`http://localhost:3000/product`);
   }
-  getProduct(id:string | number) {
+  getProduct(id:number) {
     return this.http.get<product>(`http://localhost:3000/product/${id}`);
   }
 
