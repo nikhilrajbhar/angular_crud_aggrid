@@ -13,7 +13,7 @@ export class ApiService {
 
  
 
-  productAdd(data: any) {
+  productAdd(data: product) {
     console.warn(data)
     return this.http.post(`http://localhost:3000/product`,data)
 
@@ -26,7 +26,7 @@ export class ApiService {
     return this.http.get<product>(`http://localhost:3000/product/${id}`);
   }
 
-  updateProduct(data:any){
+  updateProduct(data:product){
     console.warn('data--------',data);
     return this.http.put<product>(`http://localhost:3000/product/${data.id}`,data);
   }

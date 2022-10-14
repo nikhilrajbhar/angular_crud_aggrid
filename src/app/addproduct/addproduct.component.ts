@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { product } from '../data-type';
 import { ApiService } from '../service/api.service';
 
 
@@ -59,7 +60,7 @@ export class AddproductComponent implements OnInit {
   }
 
   getproductById(id: string | number) {
-    this.api.getProduct(id).subscribe((result: any) => {
+    this.api.getProduct(id).subscribe((result: product) => {
       console.log("result ----", result);
 
       if (result) {

@@ -1,20 +1,12 @@
-export interface SignUpdata {
-    name:string,
-    password:string,
-    email:string,
-}
-
-export interface loginData {
-    email:string,
-    password:string,
-}
 
 export interface product {
     productName:string,
-    category:string,
-    comment:string,
-    date:string,
-    freshness:string
-    price:number,
+    productPrice:number,
+    productColor:string,
+    productImage:string,
+    productDescription:string
+    id:number,
 }
+
+
 
